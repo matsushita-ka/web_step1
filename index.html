@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>つつじ亭</title>
 </head>
 <body>
@@ -22,14 +22,14 @@
     <header class="header">
         <div class="header_inner">
             <img class="header_logo" src="../web-step1/img/logo_header.png" alt="つつじ亭ロゴ">
-            <nav class="header_nav">
-                <ul>
-                    <li class="nav_item"><a href="">トップ</a></li>
-                    <li class="nav_item"><a href="">自然林の庭</a></li>
-                    <li class="nav_item"><a href="">客室</a></li>
-                    <li class="nav_item"><a href="">料理</a></li>
-                    <li class="nav_item"><a href="">温泉</a></li>
-                    <li class="nav_item"><a href="">交通</a></li>
+            <nav>
+                <ul class="headerNav">
+                    <li class="headerNav_item"><a href="">トップ</a></li>
+                    <li class="headerNav_item"><a href="">自然林の庭</a></li>
+                    <li class="headerNav_item"><a href="">客室</a></li>
+                    <li class="headerNav_item"><a href="">料理</a></li>
+                    <li class="headerNav_item"><a href="">温泉</a></li>
+                    <li class="headerNav_item"><a href="">交通</a></li>
                 </ul>
             </nav>
             <div class="header_btn">
@@ -42,14 +42,23 @@
     <!-- メイン要素を意味するタグ -->
     <main>
         <img class="mainLogo" src="" alt="つつじ亭ロゴ">
-        <h1 class="mainTitle">約三千坪を誇る<br class="pcBr">自然林の庭で、<br class="pcBr">四季折々の風景を</h1>
-            <p class="main_txt">五千坪の敷地に建つ、つつじ亭は、約三千坪の自然林を野趣あふれる庭としております。<br class="pcBr">白根の山並を望む、四季折々のなかで朝夕の草木のそよぎ、<br class="pcBr">風の香り、雨音、雪の舞いにふれていただく木造りの小さな宿でございます。<br class="pcBr">自然に寄り添った宿ゆえに、季節にうもれ、<br class="pcBr">ゆっくりと時をおすごしいただくことを、お客様への何よりのおもてなしの心といたしております。</p>
+        <h1 class="mainTitle">
+            <span class="mainTitle_txt">約三千坪を誇る</span>
+            <span class="mainTitle_txt">自然林の庭で、</span>
+            <span class="mainTitle_txt">四季折々の風景を。</span>
+        </h1>
+            <p class="main_txt">五千坪の敷地に建つ、つつじ亭は、約三千坪の自然林を野趣あふれる庭としております。
+                <span class="mainTxt">白根の山並を望む、四季折々のなかで朝夕の草木のそよぎ</span>
+                <span class="mainTxt">風の香り、雨音、雪の舞いにふれていただく木造りの小さな宿でございます。</span>
+                <span class="mainTxt">自然に寄り添った宿ゆえに、季節にうもれ、</span>
+                <span class="mainTxt">ゆっくりと時をおすごしいただくことを、お客様への何よりのおもてなしの心といたしております。</span>
+            </p>
             <img class="mainImg" src="../web-step1/img/main_img.jpg" alt="上空からの旅館写真">
-            <a href=""><img class="videoImg" src="../web-step1/img/main_video 1.jpg" alt="YouTubeリンク画像"></a>
+            <a href=""><img class="videoImg" src="../web-step1/img/main_video01.jpg" alt="YouTubeリンク画像"></a>
             <div class="news">
                 <div class="news_inner">
-                    <h2 class="title title__news">お知らせ</h2>
-                        <p class="subTitle subTitle__news">News & Infomation</p>
+                    <h2 class="title title_news">お知らせ</h2>
+                        <p class="subTitle subTitle_news">News & Infomation</p>
                         <ul class="news_list">
                             <li class="news_item">
                                  <p class="news_icon">つつじ亭</p>
@@ -77,64 +86,109 @@
                                  <p class="news_content">2025年弥生〜卯月献立</p>
                             </li>
                         </ul>
-                        <p>お知らせ一覧へ</p>
+                        <a href="">お知らせ一覧へ</a> 
                 </div>
             </div>
-            <div class="plan">
+            <section class="plan">
                 <div class="plan_inner">
-                    <h2 class="title title__plan">おすすめプラン</h2>
-                        <p class="subTitle subTitle__plan">Recommend plan</p>
+                    <h2 class="title title_plan">おすすめプラン</h2>
+                        <p class="subTitle subTitle_plan">Recommend plan</p>
                         <div class="plan_content plan_content--hp">
                             <img class="planImg" src="../web-step1/img/plan_img01.jpg" alt="料理の写真">
                             <p class="contentTitle">【HP限定】自社HPからのご予約がお得！~ベストレートプラン~</p>
                             <p class="contentTxt">このプランはホームページからのご予約（オンライン予約）限定のプランとなります。お電話でのご予約を承っておりません。<br class="pcBr">※休前日は設定外となります。</p>
-                            <p class="detail">詳細はこちら</p>
+                            <a class="detail" href="">詳細はこちら</a>
                         </div>
                         <div class="plan_content plan_content--an">
                             <img class="planImg" src="../web-step1/img/plan_img02.jpg" alt="ガラスのティーセットの写真">
                             <p class="contentTitle">【HP限定】Private Ａnniversary ~ふうわりと心やすまる記念日プラン~</p>
                             <p class="contentTxt">大切な記念日はプライベート感溢れる『湯けむりの里』でごゆっくりとお過ごし下さい。</p>
-                            <p class="detail">詳細はこちら</p>
+                            <a class="detail" href="">詳細はこちら</a>
                         </div>
                 </div>
-            </div>
-            <div class="reserve">
-            <h3 class="reserve">つつじ亭の予約はホームページからの予約が一番お得です。</h3>
-            <p class="reserve_content">ホームページ限定予約特典として、最安値料金（ベストレート）にてご案内いたします。<br class="pcBr">また、ホームページ限定の特別プランをご用意しております。</p>
-            <p class="reserve_txt">【ベストレート保障のご利用条件】<br class="pcBr">※特典や内容（客室・人数等）の異なるプランは比較対象外とします。<br class="pcBr">※一般のお客様向けに料金が公開されていないプランは除きます。<br class="pcBr">※情報紹介のみや案内のみのサイトで実際に予約のできないサイトは対象外とします。</p>
+            </section>
+            <section class="reserve">
+            <p class="reserve">つつじ亭の予約はホームページからの予約が一番お得です。</p>
+            <p class="reserve_content">
+                <span>ホームページ限定予約特典として、最安値料金（ベストレート）にてご案内いたします。</span>
+                <span>また、ホームページ限定の特別プランをご用意しております。</span>
+            </p>
+            <p class="reserve_txt">
+                <span>【ベストレート保障のご利用条件】</span>
+                <span>※特典や内容（客室・人数等）の異なるプランは比較対象外とします。</span>
+                <span>※一般のお客様向けに料金が公開されていないプランは除きます。</span>
+                <span>※情報紹介のみや案内のみのサイトで実際に予約のできないサイトは対象外とします。</span>
+            </p>
             </div>
             <div class="link">
                 <a class="linkPlan">
                     <p class="linkPlan_">お客さまに合った宿泊プランをご予約いただけます</p>
                     <p>宿泊プラン一覧はこちら</p>
                 </a>
-                <a classs="linkTel">
+                <a class="linkTel">
                     <p>お問い合わせはこちら</p>
                     <p><span>tel.</span>0279-88-9321</p>
                 </a>
-            </div>
-            <div class="menu">
-                <h2 class="title title menu">庭</h2>
-                <p class="subTitle subTitle__menu">Nature</p>
-                <p class="menu_content">季節の移ろいを感じる、約三千坪の自然林</p>
-            </div>
-            <div class="menu">
-                <h2 class="title title menu">間</h2>
-                <p class="subTitle subTitle__menu">Room</p>
-                <p class="menu_content">緑の潤いを傍らにする、寛ぎの空間</p>
-            </div>
-            <div class="menu">
-                <h2 class="title title menu">食</h2>
-                <p class="subTitle subTitle__menu">Food</p>
-                <p class="menu_content">一客一亭の彩り豊かな滋味</p>
-            </div>
-            <div class="menu">
-                <h2 class="title title menu">湯</h2>
-                <p class="subTitle subTitle__menu">Onsen</p>
-                <p class="menu_content">風景の中に溶け込む、心地よい湯浴み</p>
-            </div>
-        
-
+            </section>
+            <section class="menu">
+                <ul>
+                    <li class="menuItem">
+                        <h3 class="title title_menu">庭</h3>
+                        <p class="subTitle subTitle_menu">Nature</p>
+                        <p class="menu_content">季節の移ろいを感じる、約三千坪の自然林</p>
+                    </li>
+                    <li class="menuItem">
+                        <h3 class="title title_menu">間</h3>
+                        <p class="subTitle subTitle_menu">Room</p>
+                        <p class="menu_content">緑の潤いを傍らにする、寛ぎの空間</p>
+                    </li>
+                    <li class="menuItem">
+                        <h3 class="title title_menu">食</h3>
+                        <p class="subTitle subTitle_menu">Food</p>
+                        <p class="menu_content">一客一亭の彩り豊かな滋味</p>
+                    </li>
+                    <li class="menuItem">
+                        <h3 class="title title_menu">湯</h3>
+                        <p class="subTitle subTitle_menu">Onsen</p>
+                        <p class="menu_content">風景の中に溶け込む、心地よい湯浴み</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="map">
+                <img src="" alt="Googleマップ">
+                <a class="mapBtn mapBtn--left" href="">つつじ亭へのアクセスを詳しく</a>
+                <a class="mapBtn mapBtn--right" href="">Google Mapで開く</a>
+            </section>
+            <footer>
+                <div class="address">
+                    <img class="addressImg" src="../web-step1/img/footer_img01.jpg" alt="つつじ亭の看板と紅葉の画像">
+                    <div class="address_content">
+                        <img class="addressLogo" src="../web-step1/img/footer_logo01.png" alt="つつじ亭ロゴ">
+                        <address class="address_txt">
+                            <span>〒377-1711　群馬県吾妻郡草津町639-1</span>
+                            <span>TEL.0279-88-9321,  FAX.0279-88-9322</span>
+                        </address>
+                    </div>
+                </div>
+                <nav class="footerNav">
+                    <ul>
+                        <li class="footerNav_item"><a href="">トップ</a></li>
+                        <li class="footerNav_item"><a href="">自然林の庭</a></li>
+                        <li class="footerNav_item"><a href="">客室</a></li>
+                        <li class="footerNav_item"><a href="">料理</a></li>
+                        <li class="footerNav_item"><a href="">温泉</a></li>
+                        <li class="footerNav_item"><a href="">交通</a></li>
+                    </ul>
+                </nav>
+                <div class="banner">
+                    <a><img class="banner_item" src="../web-step1/img/footer_link01.jpg" alt="世界宿文化研究学会バナー画像"></a>
+                    <a><img class="banner_item" src="../web-step1/img/footer_link02.jpg" alt="YADOバナー画像"></a>
+                    <a><img class="banner_item" src="../web-step1/img/footer_link03.jpg" alt="onsen ism kusatuバナー画像"></a>
+                    <a><img class="banner_item" src="../web-step1/img/footer_link04.jpg" alt="ふるさと納税で楽しむ草津温泉バナー画像"></a>
+                    <a><img class="banner_item" src="../web-step1/img/footer_link05.jpg" alt="求人情報バナー画像"></a>
+                </div>
+                <small class="copyright">Copyright © tsutsujitei.  All Rights Reserved.</small>
+            </footer>
     </main>
 
 
@@ -148,9 +202,9 @@
     <nav></nav>
 
     <!-- 文字をリスト化して扱えるタグ（箇条書き的な） -->
-    <ul>
+    <!-- <ul>
         <li></li>
-    </ul>
+    </ul> -->
 
     <!-- 意味を持たない空要素。CSSの兼ね合いで要素をまとめたりしたい時に使う -->
     <div></div>
