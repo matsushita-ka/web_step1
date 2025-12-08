@@ -59,13 +59,20 @@ table {
 }
 
 .back {
+  height: 768px;
   background-image: url(../img/kv.jpg);
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: 100% auto;
+  /* width: 100%; */
 }
 
 .mainBg {
   background-image: url(../img/main_bg.jpg);
+} 
+
+.mainTitle {
+  display: inline-block;
+  margin-top: 150px;
 }
 
 .title {
@@ -83,7 +90,7 @@ table {
   letter-spacing: 4.8px;
 }
 
-/* ------------------------
+/* ---------------------------
 header
 --------------------------- */
 .header {
@@ -132,7 +139,7 @@ header
   border: 1px solid #FFFFFF;
 }
 
-/* ------------------------
+/* ---------------------------
 kv
 --------------------------- */
 .mainLogo {
@@ -172,10 +179,11 @@ kv
 }
 
 .videoImg {
-  margin: 80px auto 100px;
+  margin: 80px auto 0;
+  padding-bottom: 100px;
 }
 
-/* ------------------------
+/* ---------------------------
 information
 --------------------------- */
 .news_inner {
@@ -198,6 +206,7 @@ information
 .news_icon {
   width: 100px;
   height: 25px;
+  line-height: 25px;
   margin-right: 50px;
   letter-spacing: 4.2px;
   background-color: #78781E;
@@ -223,10 +232,12 @@ information
   color: #868686;
   display: inline-block;
   margin-top: 20px;
-
+  width: 100%;
+  text-align: end;
+  margin-bottom: 134px;
 }
 
-/* ------------------------
+/* ---------------------------
 plan
 --------------------------- */
 .plan {
@@ -260,15 +271,25 @@ plan
 
 .contentTxt {
   font-size: 14px;
-  margin-top: 10px;
+  margin: 10px 13px 0;
 }
 
 .detail {
   font-size: 13px;
   color: #868686;
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  padding: 0 13px;
+  /* margin-top: 10px; */
+  /* margin: 10px 13px auto 13px ; */
 }
 
-/* ------------------------
+/* .detail--second {
+  margin-top: 30px;
+} */
+
+/* ---------------------------
 reserve
 --------------------------- */
 .reserve {
@@ -292,6 +313,7 @@ reserve
 .reserve_content {
   margin-top: 30px;
   text-align: center;
+
 }
 
 .reserve_detail {
@@ -302,8 +324,195 @@ reserve
 .reserve_txt {
   display: inline-block;
   font-size: 10px;
+  margin-top: 30px;
 }
 
 .attention {
   display: block;
+}
+
+.link {
+  display: flex;
+  margin-top: 47px;
+  vertical-align: middle;
+}
+
+.linkPlan {
+  background-color: #78781E;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 124px;
+}
+
+.linkTel {
+  background-color: #454545;
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: 124px;
+}
+
+.linkPlan_txt,.linkTel_txt {
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.linkPlan_tl,.linkTel_tl {
+  font-size: 28px;
+  margin-top: 7px;
+}
+
+/* ---------------------------
+menu
+--------------------------- */
+.menuItem {
+  margin-top: 15px;
+  height: 483px;
+  text-align: center;
+  color: white;
+}
+
+.title_menu {
+  font-size: 48px;
+}
+
+.subTitle_menu {
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  margin-top: 0;
+  font-weight: lighter;
+}
+
+.menu_content {
+  font-size: 24px;
+  margin-top: 55px;
+}
+
+.menuItem--grdn {
+  background-image: url(../img/nature01.jpg);
+  background-repeat: no-repeat;
+}
+
+.menuItem--btwn {
+  background-image: url(../img/room01.jpg);
+  background-repeat: no-repeat;
+}
+
+.menuItem--eat {
+  background-image: url(../img/food01.jpg);
+  background-repeat: no-repeat;
+}
+
+.menuItem--htwtr {
+  background-image: url(../img/onsen01.jpg);
+  background-repeat: no-repeat;
+}
+
+
+
+/* ---------------------------
+map
+--------------------------- */
+.mapImg {
+  margin-top: 15px;
+}
+
+.mapAccess {
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  height: 60px;
+}
+
+.mapBtn {
+  display: inline-block;
+  line-height: 60px;
+  width: 235px;
+}
+
+.mapBtn--left {
+  background-color: #BBBBBB;
+  margin-right: 18px;
+}
+
+.mapBtn--right {
+  background-color: #222222;
+}
+
+/* ---------------------------
+address
+--------------------------- */
+.address {
+  margin-top: 150px;
+}
+
+.address_inner {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.addressImg {
+  margin-right: 201px;
+  
+}
+
+.addressLogo {
+  display: inline-block;
+  margin: 88px auto 0;
+}
+
+.address_txt {
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+.telFax {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ---------------------------
+footerNav
+--------------------------- */
+.footerNav {
+  display: flex;
+  width: fit-content;
+  margin: 100px auto 0;
+}
+
+/* .footerNav_item::after {
+  content: "";
+  display: inline-block;
+  background-color: #DDDDDD;
+  width: 1px;
+  height: 21px;
+} */
+
+.footerNav_item {
+  margin-right: 60px;
+}
+
+.banner_item {
+  margin-right: 20px;
+}
+
+.banner {
+  display: flex;
+  margin-top: 60px;
+  text-align: center;
+  
+  
+}
+
+.copyright {
+  width: 100%;
+  display: inline-block;
+  margin: 60px 0 162px;
+  text-align: center;
+  font-size: 12px;
 }
