@@ -99,7 +99,7 @@ header
   height: 100px;
 }
 
-.header_inner {
+.headerInner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@ header
   margin: 0 auto;
 }
 
-.header_logo {
+.headerLogo {
   margin: 12px 55px 0 0;
 }
 
@@ -115,7 +115,7 @@ header
   display: flex;
 }
 
-.headerNav_item,.btn {
+.headerNavitem,.btn {
   margin-right: 48px;
   color: white;
 }
@@ -127,7 +127,7 @@ header
   width: 78px;
   height: 44px;
   margin-right: 15px;
-  background-color: 78781E;
+  background-color: #78781E;
 }
 
 .btn--calendar {
@@ -156,7 +156,7 @@ kv
   color: white;
 }
 
-.mainTitle_txt {
+.mainTitletxt {
   /* display: inline-block; */
   width: 48px;
   font-size: 48px;
@@ -186,24 +186,24 @@ kv
 /* ---------------------------
 information
 --------------------------- */
-.news_inner {
+.newsInner {
   text-align: center;
   width: 80vw;
   margin: 0 auto;
 }
 
-.news_list {
+.newsList {
   text-align: center;
 }
 
-.news_item {
+.newsItem {
   display: flex;
   font-size: 14px;
   border-bottom: 1px #CCCCCC solid;
   padding: 16px 0;
 }
 
-.news_icon {
+.newsIcon {
   width: 100px;
   height: 25px;
   line-height: 25px;
@@ -214,16 +214,16 @@ information
   /* text-align: center; */
 }
 
-.news_item--fst {
+.newsItem--fst {
   border-top: 1px #CCCCCC solid;
   margin-top: 54px;
 }
 
-.news_date {
+.newsDate {
   color: #888888;
 }
 
-.news_date {
+.newsDate {
   margin-right: 50px;
 }
 
@@ -244,7 +244,7 @@ plan
   background-color: #E8E7E2;
 }
 
-.plan_inner {
+.planInner {
   text-align: center;
 }
 
@@ -256,7 +256,7 @@ plan
   text-align: start;
 }
 
-.plan_content {
+.planContent {
   width: 480px;
   background-color: #FFFFFF;
 }
@@ -297,7 +297,7 @@ reserve
   background-color: #E8E7E2;
 }
 
-.reserve_inner {
+.reserveInner {
   width: 63vw;
   margin: 0 auto;
 }
@@ -310,18 +310,18 @@ reserve
   padding-bottom: 9px;
 }
 
-.reserve_content {
+.reserveContent {
   margin-top: 30px;
   text-align: center;
 
 }
 
-.reserve_detail {
+.reserveDetail {
   display: block;
   margin: 0 13px;
 }
 
-.reserve_txt {
+.reserveTxt {
   display: inline-block;
   font-size: 10px;
   margin-top: 30px;
@@ -337,7 +337,7 @@ reserve
   vertical-align: middle;
 }
 
-.linkPlan {
+.linkplan {
   background-color: #78781E;
   color: white;
   width: 100%;
@@ -345,7 +345,7 @@ reserve
   height: 124px;
 }
 
-.linkTel {
+.linktel {
   background-color: #454545;
   color: white;
   width: 100%;
@@ -353,12 +353,12 @@ reserve
   height: 124px;
 }
 
-.linkPlan_txt,.linkTel_txt {
+.linkplanTxt,.linktelTxt {
   font-size: 10px;
   margin-top: 30px;
 }
 
-.linkPlan_tl,.linkTel_tl {
+.linkplanTl,.linktelTl {
   font-size: 28px;
   margin-top: 7px;
 }
@@ -373,11 +373,11 @@ menu
   color: white;
 }
 
-.title_menu {
+.titleMenu {
   font-size: 48px;
 }
 
-.subTitle_menu {
+.subTitleMenu {
   font-size: 16px;
   color: white;
   line-height: 24px;
@@ -385,7 +385,7 @@ menu
   font-weight: lighter;
 }
 
-.menu_content {
+.menuContent {
   font-size: 24px;
   margin-top: 55px;
 }
@@ -450,7 +450,7 @@ address
   margin-top: 150px;
 }
 
-.address_inner {
+.addressInner {
   display: flex;
   width: 80vw;
   margin: 0 auto;
@@ -466,7 +466,7 @@ address
   margin: 88px auto 0;
 }
 
-.address_txt {
+.addressTxt {
   margin-top: 50px;
   font-size: 14px;
 }
@@ -499,12 +499,14 @@ footerNav
 
 .banner_item {
   margin-right: 20px;
+  display: block;
 }
 
 .banner {
   display: flex;
-  margin-top: 60px;
-  text-align: center;
+  /* margin-top: 60px; */
+  /* text-align: center; */
+  margin: 60px auto 0;
   
   
 }
