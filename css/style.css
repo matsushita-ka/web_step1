@@ -63,7 +63,6 @@ table {
   background-image: url(../img/kv.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  /* width: 100%; */
 }
 
 .mainBg {
@@ -94,7 +93,6 @@ table {
 header
 --------------------------- */
 .header {
-  /* opacity: 0.8; */
   background-color: black;
   height: 100px;
 }
@@ -156,7 +154,6 @@ kv
 }
 
 .mainTitle {
-  /* display: flex; */
   writing-mode: vertical-rl;
   margin: 0 auto;
   font-size: 48px;
@@ -169,9 +166,7 @@ kv
 
 .mainTitletxt {
   display: block;
-  /* width: 48px;
-  text-align: center; */
-  margin-left: 80px; 
+  margin-left: 80px;
   margin-top: 0;
   margin-bottom: 0;
   white-space: nowrap;
@@ -231,7 +226,6 @@ information
   letter-spacing: 4.2px;
   background-color: #78781E;
   color: #FFFFFF;
-  /* text-align: center; */
 }
 
 .newsItem--fst {
@@ -284,9 +278,7 @@ plan
 .contentTitle {
   font-size: 16px;
   color: #78781E;
-  /* margin-top: 18px; */
   margin: 18px 13px 0;
-
 }
 
 .contentTxt {
@@ -301,17 +293,11 @@ plan
   width: 100%;
   text-align: end;
   padding: 0 13px;
-  /* margin-top: 10px; */
-  /* margin: 10px 13px auto 13px ; */
 }
 
 .detailFst {
   margin-bottom: 14px;
 }
-
-/* .detail--second {
-  margin-top: 30px;
-} */
 
 /* ---------------------------
 reserve
@@ -348,7 +334,6 @@ reserve
 .reserveTxt {
   display: block;
   font-size: 10px;
-  /* margin-top: 30px; */
   margin: 30px auto 0;
   width: fit-content;
 }
@@ -510,14 +495,6 @@ footerNav
   width: fit-content;
   margin: 100px auto 0;
 }
-
-/* .footerNav_item::after {
-  content: "";
-  display: inline-block;
-  background-color: #DDDDDD;
-  width: 1px;
-  height: 21px;
-} */
 
 .footerNav_item {
   margin-right: 60px;
